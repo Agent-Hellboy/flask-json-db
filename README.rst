@@ -46,7 +46,8 @@ Example
     if __name__ == '__main__':
         app.run()
 
-    open the custom.json and get to know about these variable values
+
+ open the custom.json and get to know about these variable values
 
 General Info
 ============
