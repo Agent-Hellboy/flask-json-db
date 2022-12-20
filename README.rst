@@ -36,12 +36,13 @@ Example
     @app.route("/home")
     def home():
         json_db.write({"home_var":["jshajdhjs"]})
-        return 'ghj'
+        return 'home'
 
     @app.route("/new_home")
     def new_home():
         db.write({"new_home_var": "new_home_var_value"})
-        return "hjk"
+        # this raise exception and got handled in app_teardown
+        return "new_home"
 
     if __name__ == '__main__':
         app.run()
